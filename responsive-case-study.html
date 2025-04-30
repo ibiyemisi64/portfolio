@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/case-study.css">
+    <title>Ibiyemisi Gbenebor - CS 1300 - Responsive Re-design</title>
+  </head>
+
+  <body>
+    <!-- Navbar START -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #121212;">
+      <a class="navbar-brand font-playfair" href="./index.html">
+        <img src="./images/personal-logos/butterfly-logo-white.png" width="30" height="30" class="d-inline-block align-center mr-2" alt="Butterlfy Logo.">
+        Ibiyemisi Gbenebor
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse align-items-end font-open-sans-light" id="navbarText">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#projects">WORK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about-me.html">ABOUT</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./docs/resume.pdf" target="_blank">RESUME</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar END -->
+  
+    <!-- Problem Overview Start -->
+    <div class="container-fluid"  style="background-color: #121212;">
+      <div class="container py-5 text-light">
+        <h1> Restaurant Website Redesign</h1>
+        <p class="pad-bottom">For this project, I took on the challenge of reimagining the website for <a href="https://www.hengpvd.com/home">HENG Thai & Rotisserie</a> - a restaurant I personally love (their Pad Kee Mao with crispy chicken is my favorite!). While the food is outstanding, the original website was falling short: it struggled with visual appeal, readability, responsiveness, and clear pathways for online ordering. With major usability issues throughout, it was the perfect candidate for a thoughtful, user-centered redesign.</p>
+      </div>
+    </div>
+    <!-- Project Overview End -->
+
+
+    <!-- Original Website START -->
+    <div class="container h2-top">
+      <h2 class="h2-top">Original Website</h2>
+      <!-- <p class="py-3"> For better readability, use full-screen mode by pressing the icon in the top right of the panel below.</p> -->
+      <div class="container py-3 d-flex justify-content-center">
+        <iframe style="border: 1px solid rgba(171, 29, 227, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/VLbeWqOocxa79SYsLmgzBP/Orginal-Website?node-id=1-3&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&embed-host=share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Issues START -->
+    <div class="container pad-bottom">
+      <h3>Areas for Usability Improvement</h3>
+      <p>To kick things off, I explored the original website and manually identified general usability issues that impacted accessibility, learnability, and memorability. Then, I ran the site through the WAVE evaluation tool to uncover additional accessibility problems. You can check out all of my findings below!</p> 
+      
+      <div class="d-flex align-items-start py-3">
+        
+        <!-- Vertical Tabs -->
+        <div class="nav flex-column nav-pills" id="usability-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active mb-3" id="accessibility-tab" data-bs-toggle="pill" data-bs-target="#accessibility" type="button" role="tab" aria-controls="accessibility" aria-selected="true">Usability Analysis</button>
+          <button class="nav-link mb-3" id="wave-tab" data-bs-toggle="pill" data-bs-target="#wave" type="button" role="tab" aria-controls="wave" aria-selected="false">WAVE Evaluation Results</button>
+        </div>
+      
+        <!-- Tab Content -->
+        <div class="tab-content" id="usability-pills-tabContent">
+          <!-- First Tab Content -->
+          <div class="tab-pane fade show active" id="accessibility" role="tabpanel" aria-labelledby="accessibility-tab">
+            <ul>
+              <li><strong>Lack of Iconography:</strong> Ordering options do not have associated icons, reducing learnability as users may struggle to quickly identify ordering methods.</li>
+              <li><strong>Inconsistent Styling:</strong> Ordering options are not logically grouped or consistently styled, impacting efficiency and memorability.</li>
+              <li><strong>Poor Information Hierarchy:</strong> The main panel lacks variation in text styling and layout, making it difficult for users to differentiate content significance and relationships.</li>
+              <li><strong>Illegible Button Text:</strong> The “Order Here” button has low contrast due to white text against a patterned background, affecting readability and usability.</li>
+              <li><strong>Misleading Link Styling:</strong> The phone number is underlined, suggesting it is a web link; however, it initiates a phone call without any color distinction, potentially confusing users.</li>
+              <li><strong>Inconsistent Hover States:</strong> Buttons have inconsistent hover states, making it unclear which elements are interactive, negatively affecting learnability.</li>
+              <li><strong>Poor Header Visibility:</strong> The header “HENG Thai &amp; Rotisserie” has readability issues due to a busy background and insufficient text contrast.</li>
+              <li><strong>Small Footer Text:</strong> Footer content uses very small and lightly colored text, significantly reducing legibility and accessibility.</li>
+              <li><strong>Navigation Visibility:</strong> Navigation dots indicating scroll position are not always visible, impacting user orientation.</li>
+              <li><strong>Non-Responsive Design:</strong> Shrinking the browser window on desktop devices results in critical ordering buttons and menu items being cut off, forcing unnecessary scrolling and reducing usability.</li>
+            </ul>
+          </div>
+
+          <!-- Second Tab Content -->
+          <div class="tab-pane fade" id="wave" role="tabpanel" aria-labelledby="wave-tab">
+            <ul>
+              <li><strong>Missing Alternative Text:</strong> Multiple images lack descriptive alternative text, significantly affecting screen reader accessibility.</li>
+              <li><strong>Empty Headings:</strong> Empty headings are improperly used as spacers, negatively impacting screen reader navigation and focus order.</li>
+              <li><strong>Text Size Issues:</strong> Certain text elements are excessively small, negatively impacting readability and accessibility.</li>
+              <li><strong>Misleading Underlines:</strong> Some underlined text is not associated with links, creating confusion about interactive elements.</li>
+              <li><strong>Heading Skips:</strong> WAVE flagged skipped heading levels as issues; however, skipped headings are acceptable if the overall information hierarchy remains logical and clear.</li>
+              <li><strong>Contrast Issues:</strong> Despite WAVE not detecting contrast issues, manual inspection reveals significant readability problems with the “Delivery” button and header titles, confirming the presence of contrast-related accessibility concerns.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+     </div>
+    
+    <!-- <div class="container pt-5">
+      <h2 class="py-3 ">Areas for Usability Improvement</h2>
+
+      <h3 class="py-3">Accessibility, Learnability, Memorability</h3>
+      <ul>
+          <li><strong>Lack of Iconography:</strong> Ordering options do not have associated icons, reducing learnability as users may struggle to quickly identify ordering methods.</li>
+          <li><strong>Inconsistent Styling:</strong> Ordering options are not logically grouped or consistently styled, impacting efficiency and memorability.</li>
+          <li><strong>Poor Information Hierarchy:</strong> The main panel lacks variation in text styling and layout, making it difficult for users to differentiate content significance and relationships.</li>
+          <li><strong>Illegible Button Text:</strong> The “Order Here” button has low contrast due to white text against a patterned background, affecting readability and usability.</li>
+          <li><strong>Misleading Link Styling:</strong> The phone number is underlined, suggesting it is a web link; however, it initiates a phone call without any color distinction, potentially confusing users.</li>
+          <li><strong>Inconsistent Hover States:</strong> Buttons have inconsistent hover states, making it unclear which elements are interactive, negatively affecting learnability.</li>
+          <li><strong>Poor Header Visibility:</strong> The header “HENG Thai &amp; Rotisserie” has readability issues due to a busy background and insufficient text contrast.</li>
+          <li><strong>Small Footer Text:</strong> Footer content uses very small and lightly colored text, significantly reducing legibility and accessibility.</li>
+          <li><strong>Navigation Visibility:</strong> Navigation dots indicating scroll position are not always visible, impacting user orientation.</li>
+          <li><strong>Non-Responsive Design:</strong> Shrinking the browser window on desktop devices results in critical ordering buttons and menu items being cut off, forcing unnecessary scrolling and reducing usability.</li>
+      </ul>
+
+      <h3 class="py-3">WAVE Accessibility Evaluation</h2>
+      <ul>
+          <li><strong>Missing Alternative Text:</strong> Multiple images lack descriptive alternative text, significantly affecting screen reader accessibility.</li>
+          <li><strong>Empty Headings:</strong> Empty headings are improperly used as spacers, negatively impacting screen reader navigation and focus order.</li>
+          <li><strong>Text Size Issues:</strong> Certain text elements are excessively small, negatively impacting readability and accessibility.</li>
+          <li><strong>Misleading Underlines:</strong> Some underlined text is not associated with links, creating confusion about interactive elements.</li>
+          <li><strong>Heading Skips:</strong> WAVE flagged skipped heading levels as issues; however, skipped headings are acceptable if the overall information hierarchy remains logical and clear.</li>
+          <li><strong>Contrast Issues:</strong> Despite WAVE not detecting contrast issues, manual inspection reveals significant readability problems with the “Delivery” button and header titles, confirming the presence of contrast-related accessibility concerns.</li>
+      </ul>
+  </div> -->
+
+  <!-- Redesign START -->
+  <div class="container pad-bottom">
+    <h2>Preparing for Website Redesign</h2>
+    <h3>Design Guide</h3>
+    <p> Next, I created a design guide outlining the fonts, icons, buttons, and controls I planned to use to address the identified usability issues and imprve the user experience.</p>
+    <h3>Prototype</h3>
+    <p>
+      Using the design guide, I created a responsive prototype in Figma that showcases the the website on various screen sizes: phone, tablet, and laptop. The prototype includes design notes for implementing responsiveness, which is one of the primary goals of this case study. 
+    </p>
+    <p class="text-muted">View the design guide and prototypes in the panel below.</p>
+  
+    <!-- <p>
+      For better readability, use full-screen mode by pressing the icon in the top-right of the panel below.
+    </p> -->
+    <iframe class="py-3" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://embed.figma.com/design/oOXmGpwdJYrrqDOBSoyEWo/responsive-redesign?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+    
+  </div>
+  <div class="container pad-bottom">
+    <h2>New and Improved Restaurant Website</h2>
+    <h3>Design Wins</h3>
+    <p class="pt-3 pb-0">The redesgined website achieves the following:</p>
+    <ul class="pb-3">
+      <li>Simplified color scheme with high contrast to improve accessibility.</li>
+      <li>Additional icons so users can better understand interactions. For example, the Doordash and Online Pickup icons indicate external platforms, and a phone icon shows that clicking calls the restaurant.</li>
+      <li>Clear hierarchy through appropriate font styles and placement of elements.</li>
+      <li>Consistent hover states across all buttons and navigation items.</li>
+      <li>Larger footer text to enhance accessibility.</li>
+      <li>A responsive layout that efficiently scales and repositions items for different devices.</li>
+    </ul>
+    <h3>See It in Action: Responsive Web Preview</h3>
+    <p>
+      Explore the responsive redesign using the button below. This prototype was built with HTML, CSS, Bootstrap, and Google Fonts to bring the concept to life. Please note that the site is not fully functional and serves as a visual demonstration only.
+    </p>
+    <a href="redesign.html" class="btn btn-primary text-center">
+      <i class="bi bi-box-arrow-up-right mr-2"></i>
+      Enter the Redesigned Website
+    </a>
+
+    <!-- Footer Start -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 my-4 dark-content">
+      <p class="col-md-4 mb-0 text-secondary">© 2025 Ibiyemisi Gbenebor</p>
+  
+      <ul class="nav col-md-4 footer-icons">
+        <li class="nav-item">
+          <a href="mailto:ibiyemisi_gbenebor@brown.edu" class="nav-link px-2 text-secondary">
+            <i class="bi bi-envelope-fill me-2"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="www.linkedin.com/in/ibiyemisi" class="nav-link px-2 text-secondary">
+            <i class="bi bi-linkedin me-2"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+p,ul {
+font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-open-sans-light {
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; /* Light weight */
+  letter-spacing: 0.1em;
+}
+
+.jumbotron-custom {
+  background-image: url('../images/personal-logos/butterfly-background.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #121212;
+  padding: 4rem 2rem;
+
+  min-height: 450px;
+  height: 100%;
+  flex: 1 0 auto;           /* Prevents collapsing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-glow {
+  text-shadow: 10px 0px 15px #e1c3ff;
+  color: #e1c3ff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/* If you’re marking the <a> itself as active: */
+.navbar-nav .nav-link.active {
+  color: #b479fc !important;
+}
+
+/* Or, if you’re marking the <li> as active: */
+.navbar-nav .nav-item.active .nav-link {
+  color: #b479fc !important;
+}
+
+.dark-content {
+  background-color: #121212;
+
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+  background-color: #282828;
+  color: white;
+  border-radius: 0.5rem;
+}
+.carousel-inner {
+  padding: 3rem;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+.card-img-top-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* 1:1 aspect ratio */
+  overflow: hidden;
+  border-radius: 0.5rem; /* optional for rounded corners */
+
+}
+
+.card-img-top-wrapper img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Override primary Bootstrap button styles */
+.btn-primary {
+  background-color: #b479fc;
+  border-color: #b479fc;
+  color: #fff;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #7E54B0;
+  border-color: #7E54B0;
+  color: #fff;
+}
+
+/* body {
+  background-image: url("../images/personal-logos/fairy.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+
+.hero-img {
+  width: 75%;
+  height: auto;
+}
+
+
+.hero-text {
+  font-size: 6rem;
+  color: white;
+}
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    width: 100%;
+  }
+  .footer-icons {
+    justify-content: flex-start;
+    align-items: baseline;
+    color: white;
+    margin-left: 5px;
+  }
+  .hero-text {
+    font-size: 3rem;
+    color: white;
+  }
+}

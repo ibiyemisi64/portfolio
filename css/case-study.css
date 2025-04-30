@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap');
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+ul, li {
+font-family: 'Open Sans', sans-serif;
+font-size: 1rem;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 1rem;
+padding-bottom: 1rem;
+font-size: 1rem
+  }
+
+
+h3,h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; /* Light weight */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500; 
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.h2-top {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500; 
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.pad-bottom{
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.light-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; /* Light weight */
+}
+.zoom-img {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Global link colors */
+a {
+  color: #be88fd;        /* normal link */
+  text-decoration: none; /* optional: remove underline */
+}
+
+a:visited {
+  color: #be88fd;        /* visited link */
+}
+
+a:hover,
+a:focus {
+  color: #d0a6fe;        /* hover & focus */
+  text-decoration: underline; /* optional: re-add underline on hover */
+}
+
+a:active {
+  color: #d0a6fe;        /* active/clicked state */
+}
+
+.zoom-img:hover {
+  transform: scale(2);
+}
+
+/* Override Bootstrap pill button styles */
+.nav-pills .nav-link {
+  color: white; /* base text color (darkest purple) */
+  border-radius: 0.375rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* <-- this adds the drop shadow */
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+  border: none;
+  background-color: rgb(104, 104, 104);
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+@media (max-width: 768px) {
+  .footer-icons {
+    justify-content: flex-start;
+    align-items: baseline;
+    color: white;
+    margin-left: 5px;
+  }
+}
+
+/* Active state */
+.nav-pills .nav-link.active {
+  background-color: #b479fc;  /* strong purple */
+  color: white;
+  background-image: none;
+}
+
+/* Hover state */
+.nav-pills .nav-link:hover {
+  background-color: #7E54B0; /* lighter purple for hover */
+  color: #fff;
+}
+
+/* Optional: Focus ring */
+.nav-pills .nav-link:focus {
+  box-shadow: 0 0 0 0.15rem rgba(137, 42, 163, 0.5);
+}
+
+/* Override primary Bootstrap button styles */
+.btn-primary {
+  background-color: #b479fc;
+  border-color: #b479fc;
+  color: #fff;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #7E54B0;
+  border-color: #7E54B0;
+  color: #fff;
+}
