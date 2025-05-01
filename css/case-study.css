@@ -121,13 +121,13 @@ a:active {
 }
 
 .nav-pills .nav-link.active {
-  background-color: #b479fc;  /* strong purple */
+  background-color: #b479fc;
   color: white;
   background-image: none;
 }
 
 .nav-pills .nav-link:hover {
-  background-color: #7E54B0; /* lighter purple for hover */
+  background-color: #7E54B0;
   color: #fff;
 }
 
