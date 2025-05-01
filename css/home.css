@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 .font-playfair {
   font-family: 'Playfair Display', serif;
 }
@@ -21,10 +25,14 @@ h1,h2,h3,h4 {
 }
 
 .font-open-sans-light {
-  /* font-family: 'Playfair Display', serif; */
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300; /* Light weight */
+  font-weight: 300;
   letter-spacing: 0.1em;
+}
+
+.font-open-sans-light-ns {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 .jumbotron-custom {
@@ -37,24 +45,21 @@ h1,h2,h3,h4 {
 
   min-height: 450px;
   height: 100%;
-  flex: 1 0 auto;           /* Prevents collapsing */
+  flex: 1 0 auto;    
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .text-glow {
-  text-shadow: 10px 0px 15px #e1c3ff;
   color: #e1c3ff;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
-/* If you’re marking the <a> itself as active: */
 .navbar-nav .nav-link.active {
   color: #b479fc !important;
 }
 
-/* Or, if you’re marking the <li> as active: */
 .navbar-nav .nav-item.active .nav-link {
   color: #b479fc !important;
 }
@@ -97,14 +102,18 @@ h1,h2,h3,h4 {
   .card img {
     height: 11em;
   }
+  .headshot{
+    width: 50%;
+    height: auto;
+  }
 }
 
 .card-img-top-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 100%; /* 1:1 aspect ratio */
+  padding-top: 100%; 
   overflow: hidden;
-  border-radius: 0.5rem; /* optional for rounded corners */
+  border-radius: 0.5rem; 
 
 }
 
@@ -117,28 +126,27 @@ h1,h2,h3,h4 {
   object-position: center;
 }
 
-/* Override primary Bootstrap button styles */
 .btn-primary {
-  background-color: #b479fc;
+  background-color: #b479fc !important;
   border-color: #b479fc;
+  color: #fff;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #b479fc !important; 
+  border-color: #e1c3ff;
   color: #fff;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #7E54B0;
+  background-color: #7E54B0 !important;
   border-color: #7E54B0;
   color: #fff;
 }
-
-/* body {
-  background-image: url("../images/personal-logos/fairy.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
 
 .hero-img {
   width: 75%;

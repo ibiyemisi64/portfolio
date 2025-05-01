@@ -12,6 +12,13 @@
     font-family: 'Open Sans', sans-serif;
   }
 
+  .font-open-sans-light {
+   
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; 
+    letter-spacing: 0.1em;
+  }
+  
 ul, li {
 font-family: 'Open Sans', sans-serif;
 font-size: 1rem;
@@ -27,7 +34,7 @@ font-size: 1rem
 
 h3,h4 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300; /* Light weight */
+    font-weight: 300; 
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -60,41 +67,39 @@ h2 {
 
 .light-text {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300; /* Light weight */
+  font-weight: 300; 
 }
 .zoom-img {
   transition: transform 0.5s ease-in-out;
 }
 
-/* Global link colors */
 a {
-  color: #be88fd;        /* normal link */
-  text-decoration: none; /* optional: remove underline */
+  color: #be88fd;       
+  text-decoration: none; 
 }
 
 a:visited {
-  color: #be88fd;        /* visited link */
+  color: #be88fd;
 }
 
 a:hover,
 a:focus {
-  color: #d0a6fe;        /* hover & focus */
-  text-decoration: underline; /* optional: re-add underline on hover */
+  color: #d0a6fe;
+  text-decoration: underline;
 }
 
 a:active {
-  color: #d0a6fe;        /* active/clicked state */
+  color: #d0a6fe; 
 }
 
 .zoom-img:hover {
   transform: scale(2);
 }
 
-/* Override Bootstrap pill button styles */
 .nav-pills .nav-link {
-  color: white; /* base text color (darkest purple) */
+  color: white; 
   border-radius: 0.375rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* <-- this adds the drop shadow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
   transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
   border: none;
   background-color: rgb(104, 104, 104);
@@ -115,25 +120,22 @@ a:active {
   }
 }
 
-/* Active state */
 .nav-pills .nav-link.active {
   background-color: #b479fc;  /* strong purple */
   color: white;
   background-image: none;
 }
 
-/* Hover state */
 .nav-pills .nav-link:hover {
   background-color: #7E54B0; /* lighter purple for hover */
   color: #fff;
 }
 
-/* Optional: Focus ring */
 .nav-pills .nav-link:focus {
   box-shadow: 0 0 0 0.15rem rgba(137, 42, 163, 0.5);
 }
 
-/* Override primary Bootstrap button styles */
+
 .btn-primary {
   background-color: #b479fc;
   border-color: #b479fc;
@@ -146,4 +148,12 @@ a:active {
   background-color: #7E54B0;
   border-color: #7E54B0;
   color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+  color: #b479fc !important;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  color: #b479fc !important;
 }
