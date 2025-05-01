@@ -126,15 +126,15 @@ h1,h2,h3,h4 {
   object-position: center;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary:visited {
   background-color: #717171 !important;
   border-color: #717171;
   color: #fff;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.btn-primary:active,
-.btn-primary:visited {
+.btn-primary:active {
   background-color: #b479fc !important; 
   border-color: #e1c3ff;
   color: #fff;
