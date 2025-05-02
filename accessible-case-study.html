@@ -1,62 +1,55 @@
 <html>
 
 <head>
-     <!-- Required meta tags -->
-     <meta charset="utf-8" />
-     <meta
-       name="viewport"
-       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-     />
- 
-     <!-- Bootstrap CSS -->
-     <link
-       rel="stylesheet"
-       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-       crossorigin="anonymous"
-     />
-     <link
-       rel="stylesheet"
-       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-     />
- 
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
   <link rel="stylesheet" href="./css/case-study.css">
   <title>Ibiyemisi Gbenebor - Accessible Components</title>
-  <link rel="icon" type="image/png" href="./images/personal-logos/portfolio-favicon.png"/>
+  <link rel="icon" type="image/png" href="./images/personal-logos/portfolio-favicon.png" />
   <title>Ibiyemisi Gbenebor</title>
 </head>
 
 <body>
-     <!-- Navbar START -->
-     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #121212;">
-      <a class="navbar-brand font-playfair" href="./index.html">
-        <img src="./images/personal-logos/portfolio-icon-white.png" width="25" height="25" class="d-inline-block align-middle mr-1 mb-1" alt="Butterlfy Logo.">
-        Ibiyemisi Gbenebor
-      </a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse align-items-end font-open-sans-light" id="navbarText">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#projects">WORK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about-me.html">ABOUT</a>
-          </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./docs/resume.pdf" target="_blank">RESUME</a>
-            </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Navbar END -->
+  <!-- Navbar START -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #121212;">
+    <a class="navbar-brand font-playfair" href="./index.html">
+      <img src="./images/personal-logos/portfolio-icon-white.png" width="25" height="25"
+        class="d-inline-block align-middle mr-1 mb-1" alt="Butterlfy Logo.">
+      Ibiyemisi Gbenebor
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse align-items-end font-open-sans-light" id="navbarText">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#projects">WORK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-me.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./docs/resume.pdf" target="_blank">RESUME</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar END -->
   <!-- Problem Overview Start -->
   <div class="container-fluid" style="background-color: #121212;">
     <div class="container py-5 text-light">
       <h1 class="py-4">Exploring Accessible Drop Down Menus</h1>
+      <p><strong>Skills:</strong> UI/UX Design - Canva - Accesibility Auditing<br>Designed Spring 2025</p>
       <div>
         <p>A dropdown menu is a fundamental UI component that enhances navigation by organizing options efficiently.
           However,
@@ -72,207 +65,223 @@
 
   <!-- Project Overview End -->
   <div class="container mt-4">
-        <!-- Initial Design -->
-        <h2>Initial Design</h2>
-        <p>
-          This section showcases the original dropdown menus from <strong>Google’s user profile menu, Apple’s system
-            menu, and
-            ChatGPT’s interface</strong>.
-          By analyzing these designs, I identified key differences in <strong>interaction methods, accessibility
-            features, and
-            usability trade-offs</strong> across platforms.
-        </p>
-        <p>
-          Hover over images to enlarge view.
-        </p>
+    <!-- Initial Design -->
+
+    <div class="py-3"></div>
+    <h2 class="h2-top">Initial Design</h2>
+    <p>
+      This section showcases the original dropdown menu
+      from Apple’s interface</strong>.
+      By analyzing this designs, I identified key insights in <strong>interaction methods, accessibility
+        features, and
+        usability trade-offs</strong> within the platform. The following screenshots are from disabled, active, and selected states.
+    </p>
+    <div class="container py-3 text-center">
+      <img src="./images/accessible-case-study/apple-menu.png" class="img-fluid rounded py-3" alt="Apple System Menu"
+        style="height: auto; width: 75%">
+    </div>
 
 
-        <div class="row text-center">
-          <div class="col-md-4">
-            <figure>
-              <img src="./images/accessible-case-study/googe-chrome-user-menu.png"
-                class="img-fluid rounded shadow zoom-img" alt="Google User Profile Menu">
-              <figcaption class="mt-2">Google User Profile Menu</figcaption>
-            </figure>
+
+
+
+    <div class="py-3" width="w-100">
+      <h3 class="py-4">Accessibility Audit</h3>
+      <p>First, I interacted with the Apple Menu using just the keyboard and voiceovers, then again using a mouse to
+        understand any accessibility issues present between both types of users.</p>
+      <h4>Key Insights and Accessibility Concerns</h4>
+      <ul>
+        <li>Keyboard users can not reach all menu items.</li>
+        <li>No style change when mouse is pressed, but it appears that the highlight overlay flashes when the mouse is
+          released on a menu item.</li>
+        <li>Voice over calls the drop down menu "Apple Menu", this is not descriptive of the menu's purpose.</li>
+        <li>Same style used as hovered in focused state.</li>
+      </ul>
+    </div>
+
+
+    <div class="py-3"></div>
+
+    <h2 class="pt-5 pb-3">User Interaction across States</h2>
+    <p>Below, you’ll see two separate state models, each focusing on mouse and keyboard interactions. These diagrams
+      help us visualize how a user navigates through different states when using a dropdown menu.
+     </p>
+
+    
+    <h3 class="py-4">Initial State Model: Apple Menu</h3>
+     <p> These diagrams reflect the existing Apple Menu that I analyzed previously.</p>
+     <p class="text-secondary pt-0 pb-0">To enlarge photos, click the image and use the tool bar. You can also click the links below.</p>
+     <div class="row text-center">
+      <div class="col-md-6">
+        <figure>
+          <div style="position: relative; width: 100%; height: 0; padding-top: 77.2727%;
+          padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+          border-radius: 8px; will-change: transform;">
+           <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+             src="https://www.canva.com/design/DAGftNNqwFs/yABEJee107cYRUS9ZcmxVg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+           </iframe>
+         </div>
+         <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGftNNqwFs&#x2F;yABEJee107cYRUS9ZcmxVg&#x2F;view?utm_content=DAGftNNqwFs&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Mouse</a>
+        </figure>
+      </div>
+      <div class="col-md-6">
+        <figure>
+          <div style="position: relative; width: 100%; height: 0; padding-top: 77.2727%;
+              padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+              border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy"
+              style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+              src="https://www.canva.com/design/DAGmP3oSvtA/XuDbXBhJu_NTUNZ1qmpY5Q/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
           </div>
-          <div class="col-md-4">
-            <figure>
-              <img src="./images/accessible-case-study/apple-menu.png" class="img-fluid rounded shadow zoom-img"
-                alt="Apple System Menu">
-              <figcaption class="mt-2">Apple System Menu</figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4">
-            <figure>
-              <img src="./images/accessible-case-study/chatgpt-mnenu.png" class="img-fluid rounded shadow zoom-img"
-                alt="ChatGPT Dropdown Menu">
-              <figcaption class="mt-2">ChatGPT Dropdown Menu</figcaption>
-            </figure>
-          </div>
-        </div>
+          <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGmP3oSvtA&#x2F;XuDbXBhJu_NTUNZ1qmpY5Q&#x2F;view?utm_content=DAGmP3oSvtA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+            target="_blank" rel="noopener">Keyboard</a>
+        </figure>
+      </div>
+    </div>
 
-
-
-        <h3 class="py-4">Initial Design Insights</h3>
-        <div class="py-3" width="w-100">
-          <iframe width="100%" height="600px"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRw6Lr-uiXRyllYe-Wz2MPRbice-GtOlXJxbMD7B2z3isqTZdKzymnRv7y4lUhnuF22Du7VyyPwVfHg/pubhtml?widget=true&amp;headers=false"></iframe>
-        </div>
-
-
-
-        <h2 class="pt-5 pb-3">User Interaction across States</h2>
-        <p>Below, you’ll see two separate state models, each focusing on mouse and keyboard interactions. These diagrams
-          help us visualize how a user navigates through different states when using a dropdown menu.
-          This first diagram reflects the Apple Menu that I analyze previously, and the second diagram is an newly
-          designed state model that targets specific tradeoffs.</p>
-        <p>
-          Hover over images to enlarge view.
-        </p>
-
-        <h3 class="py-4">Initial State Model: Apple Menu</h3>
-
-        <div class="row text-center">
-          <div class="col-md-4">
-            <figure>
-              <img src="./images/accessible-case-study/original-mouse.png" class="img-fluid rounded shadow zoom-img"
-                alt="Google User Profile Menu">
-              <figcaption class="py-3">Mouse</figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4">
-            <figure>
-              <img src="./images/accessible-case-study/original-keyboard.png" class="img-fluid rounded shadow zoom-img"
-                alt="Apple System Menu">
-              <figcaption class="mt-2">Keyboard</figcaption>
-            </figure>
-          </div>
-        </div>
-        <h3 class="py-4">Updated State Model: Apple Menu</h3>
-        <!-- <p>In this redesign, I introduced several state updates to improve learnability and memorability by using common interactions that may be familiar to the user in hopes that they will learn how to use the dropdown quickly. For mouse users, menu items now select on press instead of release, creating a more immediate interaction that is similar to the other drop down menus that I analyzed. The active state now features a blue outline when the menu is open, providing a higher emphasize for mouse users and keyboard users to know which menu bar item is open. Additionally, the selected state mimics a pressed button rather than briefly flashing a blue background, enhancing memorability by implementing an affordance of what a button looks like after it is pressed. For keyboard users, I added Tab navigation between menu items, aligning with the other drop down menus that allow the users to tab between item, to improve consistency and memorability across different systems.
+    <h3 class="py-4">Updated State Model: Apple Menu</h3>
+    <!-- <p>In this redesign, I introduced several state updates to improve learnability and memorability by using common interactions that may be familiar to the user in hopes that they will learn how to use the dropdown quickly. For mouse users, menu items now select on press instead of release, creating a more immediate interaction that is similar to the other drop down menus that I analyzed. The active state now features a blue outline when the menu is open, providing a higher emphasize for mouse users and keyboard users to know which menu bar item is open. Additionally, the selected state mimics a pressed button rather than briefly flashing a blue background, enhancing memorability by implementing an affordance of what a button looks like after it is pressed. For keyboard users, I added Tab navigation between menu items, aligning with the other drop down menus that allow the users to tab between item, to improve consistency and memorability across different systems.
 
           However, these changes introduce a trade-off in efficiency. Mouse users now need to be more precise, as accidental clicks can lead to unintended selections. For keyboard users, while Tab navigation improves usability, it may slow down interaction in large menus where arrow keys alone would have been a quicker way to navigate. These trade-offs highlight the balance between learnability, memorability, and efficiency, ensuring a streamlined experience at the cost of some interaction accuracy and speed.</p>
          -->
+    <p class="py-3"> After creating the state model for the existing Apple Menu, I created an udpated state model to
+      address accessibility concerns. The new addtions to the state model are in purple.
+    </p>
+    <p class="text-secondary pt-0 pb-0">To enlarge photos, click the image and use the tool bar. You can also click the links below.</p>
+    <div class="row text-center">
+      <div class="col-md-6">
+        <figure>
+          <div style="position: relative; width: 100%; height: 0; padding-top: 77.2727%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGmP6E8F_Y/dP3AhBD9xjhucYEcOmvupQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGmP6E8F_Y&#x2F;dP3AhBD9xjhucYEcOmvupQ&#x2F;view?utm_content=DAGmP6E8F_Y&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Updated Mouse Model</a>
+        </figure>
+      </div>
+      <div class="col-md-6">
+        <figure>
+          <div style="position: relative; width: 100%; height: 0; padding-top: 77.2727%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGmP-YWBsY/zWFn1Khdc0PpWlJbnn0xfg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGmP-YWBsY&#x2F;zWFn1Khdc0PpWlJbnn0xfg&#x2F;view?utm_content=DAGmP-YWBsY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Updated Keyboard models</a>
+        </figure>
+      </div>
+    </div>
+    <div class="py-5"></div>
+    <h2 class="py-3">Newly Designed State Prototype</h2>
+    <p class="pb-0 pt-3">Next, I used the updated state designs to create a visual for how the states would look. In
+      this redesign, I introduced several state updates to improve learnability and memorability by using common
+      interactions that may be familiar to the user in hopes that they will learn how to use the dropdown quickly.
+    </p>
+    <div class="container-md">
+      <img src="./images/accessible-case-study/new-deisgn.png" class="img-fluid" alt="New and Improved Design">
 
 
 
-        <div class="row text-center">
-          <div class="col-md-4">
-            <figure>
-              <img src="./images/accessible-case-study/update-mouse.png" class="img-fluid rounded shadow zoom-img"
-                alt="Old state design">
-              <figcaption class="mt-2">Mouse</figcaption>
-            </figure>
-          </div>
-          <div class="col-md-4">
-            <figure>
-              <img src="./images/accessible-case-study/update-keyboard.png" class="img-fluid rounded shadow zoom-img"
-                alt="New state design">
-              <figcaption class="mt-2">Keyboard</figcaption>
-            </figure>
-          </div>
+      <h3 class="pt-0">Design Wins: Enhancing the Experience for Every User</h3>
+      <div class="row d-flex justify-content-left pb-3">
+        <div class="col-md-6 pr-5">
+          <h4>Mouse Users</h4>
+          <ul>
+            <li>Menu items now select on press instead of release, creating a more immediate interaction similar to
+              the other dropdown menus analyzed.</li>
+            <li>The active state now features a blue outline when the menu is open, providing higher emphasis for
+              mouse and keyboard users to indicate which menu item is open.</li>
+            <li>The selected state mimics a pressed button rather than briefly flashing a blue background, enhancing
+              memorability by implementing an affordance of what a button looks like after it is pressed.</li>
+          </ul>
         </div>
-        <h3 class="py-4">Updated Design Prototype</h3>
-        <div class="container-md">
-          <figure>
-            <img src="./images/accessible-case-study/new-deisgn.png" class="img-fluid" alt="New and Improved Design">
+        <div class="col-md-6 pl-5">
 
-          </figure>
+          <h4>Keyboard Users</h4>
+          <ul>
+            <li>Added <strong>Tab navigation</strong> between menu items, aligning with other implementations of
+              dropdown menus that allow tabbing between items.</li>
+            <li>The active and selected states for keyboard users have recieved the same update that mouse users are
+              viewing.</li>
+          </ul>
         </div>
+      </div>
 
-        <p>In this redesign, I introduced several state updates to improve learnability and memorability by using common
-          interactions that may be familiar to the user in hopes that they will learn how to use the dropdown quickly.
-        </p>
-        <ul>
 
-          <li>For mouse users:
-            <ul>
-              <li>Menu items now select on press instead of release, creating a more immediate interaction similar to
-                the other dropdown menus analyzed.</li>
-              <li>The active state now features a blue outline when the menu is open, providing higher emphasis for
-                mouse and keyboard users to indicate which menu item is open.</li>
-              <li>The selected state mimics a pressed button rather than briefly flashing a blue background, enhancing
-                memorability by implementing an affordance of what a button looks like after it is pressed.</li>
-            </ul>
-          </li>
-          <li>For keyboard users:
-            <ul>
-              <li>Added <strong>Tab navigation</strong> between menu items, aligning with other implementations of
-                dropdown menus that allow tabbing between items.</li>
-              <li>The active and selected states for keyboard users have recieved the same update that mouse users are
-                viewing.</li>
-            </ul>
-          </li>
-        </ul>
-        <p>Trade-offs:<br><br>
-          These changes introduce a <strong>trade-off</strong> in efficiency. Mouse users now need to be more precise,
-          as accidental clicks can lead to unintended selections. For keyboard users, while Tab navigation improves
-          usability, it may slow down interaction in large menus where arrow keys alone would have been a quicker way to
-          navigate. These trade-offs highlight the balance between learnability, memorability, and efficiency, ensuring
-          a streamlined experience at the cost of some interaction accuracy and speed.
-        </p>
+      <h3 class="py-3">Trade-offs</h3>
+      <p>
+        These changes introduce a <strong>trade-off</strong> in efficiency. Mouse users now need to be more precise,
+        as accidental clicks can lead to unintended selections. For keyboard users, while Tab navigation improves
+        usability, it may slow down interaction in large menus where arrow keys alone would have been a quicker way to
+        navigate. These trade-offs highlight the balance between learnability, memorability, and efficiency, ensuring
+        a streamlined experience at the cost of some interaction accuracy and speed.
+      </p>
 
+
+      </figure>
     </div>
 
 
+  </div>
 
-    <div class="container py-3">
-      <h2 class="py-4">Reflection</h2>
-      <ul>
-        <li>In terms of accessibility, the Apple Menu was the most accessible for all four users and even highlighted
-          keyboard shortcuts in the menu. However, the Google menu and ChatGPT menu lacked functionality for keyboard
-          users since there were items that could not be accessed via the keyboard. In terms of usability, ChatGPT
-          included descriptions that are helpful for new users.</li>
 
-        <li>An accessibility consideration in the redesign was that the original flashing menu item when selected could
-          affect users sensitive to flashing elements. Instead, I updated the design to mimic a button being pressed and
-          removed the flash.</li>
+  <div class="py-3"></div>
+  <div class="container py-3 padding-bottom">
+    <h2 class="py-4">Reflection</h2>
+    <ul>
+      <li>An accessibility consideration in the redesign was that the original flashing menu item when selected could
+        affect users sensitive to flashing elements. Instead, I updated the design to mimic a button being pressed and
+        removed the flash.</li>
 
-        <li>A mismatch in the menu was a tab being used to close the menu. Typically, keyboard users interact with items
-          using Tab for navigation down and Tab + Shift for navigation up but the Apple Menu assumes the user will only
-          use arrows. I addressed this mismatch by updating the menu states to use only <strong>CTRL + C</strong> to
-          close the menu and kept Tab for moving across menu items.</li>
+      <li>A mismatch in the menu was a tab being used to close the menu. Typically, keyboard users interact with items
+        using Tab for navigation down and Tab + Shift for navigation up but the Apple Menu assumes the user will only
+        use arrows. I addressed this mismatch by updating the menu states to use only <strong>CTRL + C</strong> to
+        close the menu and kept Tab for moving across menu items.</li>
 
-        <li>Based on my analysis, the inputs for the Google Menu can negatively impact users with visual impairments who
-          rely on a keyboard. Some menu items were unreachable using the keyboard, including the user's saved passwords,
-          which contain sensitive information and help users log into other systems.</li>
 
-        <li>The keyboard shortcuts included in the Original Apple Menu threaten accessibility for users who rely on
-          screen readers. VoiceOver announces commands to the user, and it was confusing to hear shortcuts being read
-          aloud, as they conflicted with VoiceOver’s functionality. This could cause users to accidentally force quit or
-          shut down the system.</li>
+      <li>The keyboard shortcuts included in the Original Apple Menu threaten accessibility for users who rely on
+        screen readers. VoiceOver announces commands to the user, and it was confusing to hear shortcuts being read
+        aloud, as they conflicted with VoiceOver’s functionality. This could cause users to accidentally force quit or
+        shut down the system.</li>
+    </ul>
 
-        <li>Mouse users are often prioritized when designing components, which significantly impacts touch users. In
-          modern interactions, mobile usage is more common than desktop interaction. This also presents a mismatch
-          between real-world expectations and designed components.</li>
-      </ul>
+  </div>
 
-    </div>
+  <!-- Footer Start -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 my-4 dark-content">
+    <p class="col-sm-4 mb-0 text-secondary">© 2025 Ibiyemisi Gbenebor</p>
 
-      <!-- Footer Start -->
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 my-4 dark-content">
-        <p class="col-sm-4 mb-0 text-secondary">© 2025 Ibiyemisi Gbenebor</p>
-    
-        <ul class="nav col-sm-4 footer-icons">
-          <li class="nav-item">
-            <a href="mailto:ibiyemisi_gbenebor@brown.edu" class="nav-link px-2 text-secondary">
-              <i class="bi bi-envelope-fill me-2"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.linkedin.com/in/ibiyemisi" class="nav-link px-2 text-secondary" target="_blank">
-              <i class="bi bi-linkedin me-2"></i>
-            </a>
-          </li>
-        </ul>
-      </footer>
+    <ul class="nav col-sm-4 footer-icons">
+      <li class="nav-item">
+        <a href="mailto:ibiyemisi_gbenebor@brown.edu" class="nav-link px-2 text-secondary">
+          <i class="bi bi-envelope-fill me-2"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/in/ibiyemisi" class="nav-link px-2 text-secondary" target="_blank">
+          <i class="bi bi-linkedin me-2"></i>
+        </a>
+      </li>
+    </ul>
+  </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 </body>
 
